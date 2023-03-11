@@ -9,8 +9,12 @@
         display:none;
         background:#fff
       }
-      .swiper-slide img{
-        height:100%
+      .bgimg{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
       #heheda{
         width: 100%;
@@ -33,7 +37,7 @@
 
   <body>
     <div id="heheda" class="f_r_c" onclick="fullScreen()">
-      <img style="height:100%" src="img/horizontal/3.jpg" />
+      <div class="bgimg" style="background-image: url('img/horizontal/3.jpg')"></div>
     </div>
     <div class="swiper-container">
       <div class="swiper-wrapper"></div>
