@@ -27,17 +27,13 @@ function fullScreen(){
 window.onload=function(){
   let str=''
   for(let i=1;i<7;i++){
-    let img=new Image()
-    img.src="img/horizontal/${i}.jpg"
     str+=`<div class="swiper-slide f_r_c">
-      <img src="img/horizontal/${i}.jpg" />
+      <div class="bgimg" style="background-image:url('img/horizontal/${i}.jpg')"></div>
     </div>`
   }
   for(let i=1;i<14;i++){
-    let img=new Image()
-    img.src="img/vertical/${i}.jpg"
     str+=`<div class="swiper-slide f_r_c">
-      <img src="img/vertical/${i}.jpg" />
+      <div class="bgimg" style="background-image:url('img/vertical/${i}.jpg')"></div>
     </div>`
   }
   $('.swiper-wrapper').html(str)
